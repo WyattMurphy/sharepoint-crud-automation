@@ -1,0 +1,13 @@
+name: sharepoint-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8  # Adjust the Python version if needed
+  - pandas
+  - pip
+  - pip:
+      - office365-rest-python-client
+      - logger  # if logger is a pip package
+  - jupyter
+  - ipykernel
