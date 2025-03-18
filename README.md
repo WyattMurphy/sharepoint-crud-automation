@@ -62,7 +62,7 @@ sharepoint-crud-automation/
 
 ## Set Up
 
-To set up the development environment, follow these steps:
+**To set up conda environment, follow these steps:**
 
 ### 1. Clone the repository
 ```bash
@@ -102,7 +102,6 @@ python --version
 
 This should show Python 3.8 (or the version specified in `environment.yml`).
 
-
 **Running Outside of a Conda Environment**
 If you'd prefer to run the project outside of a Conda environment, follow these steps:
 
@@ -117,11 +116,11 @@ cd sharepoint-crud-automation
 pip install -r requirements.txt
 ```
 
-**Set Up Configuration**
+### **Set Up Configuration**
 - Modify `config/config.yaml` to include your SharePoint site URL and other configurations.
 - Ensure your SharePoint credentials are stored securely in `config/credentials.json` (avoid committing sensitive data).
 
-**Run Operations**
+### **Run Operations**
 
 You can run each operation individually. For example:
 
@@ -129,7 +128,7 @@ You can run each operation individually. For example:
 python automation/upload_file.py --file_path "local_file.xlsx" --target_path "Documents/Shared"
 ```
 
-**Automated Workflow**
+### **Automated Workflow**
 You can create a custom workflow that combines multiple operations. Example:
 
 ```python
@@ -144,7 +143,7 @@ def automated_workflow():
     return upload_response, file_list, download_response
 ```
 
-**Scheduling Tasks**
+### **Scheduling Tasks**
 You can schedule operations with `automation/scheduler/job_scheduler.py` 
 
 ## **Future Work**
