@@ -1,0 +1,48 @@
+# Virtual environment directory
+venv/
+
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temporary files
+logs/
+*.log
+
+# # Directory containing model checkpoints (if any)
+# models/checkpoints/
+
+# Configuration files for secret or API keys
+kaggle.json
+.env
+
+# IDE/editor specific files (e.g., VSCode, PyCharm)
+.vscode/
+.idea/
+
+# Operating system specific files (e.g., macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Office365 credentials file (if any)
+office365_credentials.json
+
+# Exclude credentials files (such as credentials.json)
+credentials.json
+
+
+# SharePoint-specific logs or temp files
+sharepoint_temp_files/
+*.bak
+*.swp
+
+# Python dependencies list (requirements file is generally tracked, so leave it if needed)
+#requirements.txt
+
+# Git files
+.gitmodules
