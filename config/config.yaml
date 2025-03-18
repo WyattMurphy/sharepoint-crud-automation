@@ -1,0 +1,13 @@
+# config.yaml - General Configuration
+
+# SharePoint Configuration (Non-sensitive)
+sharepoint:
+  site_url: "https://contoso.sharepoint.com/sites/marketing"  # SharePoint Site URL
+  resource: "https://contoso.sharepoint.com"                  # SharePoint Online URL resource for authentication
+
+# Optional: Logging configuration
+logging:
+  level: "INFO"  # Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  file: "app.log"  # Log file name
+
+
