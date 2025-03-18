@@ -1,3 +1,4 @@
+# Base dependencies
 requests==2.28.1
 pyyaml==6.0
 pandas==1.5.3
@@ -5,3 +6,9 @@ schedule==1.1.0
 apscheduler==3.10.1
 python-dotenv==0.21.0
 Office365-REST-Python-Client==2.3.10
+
+# Additional required packages
+office365-rest-python-client
+logger  # if logger is a pip package
+jupyter
+ipykernel
