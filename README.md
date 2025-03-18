@@ -60,6 +60,52 @@ sharepoint-crud-automation/
 
 ## **Usage**
 
+## Set Up
+
+To set up the development environment, follow these steps:
+
+### 1. Clone the repository
+```bash
+git clone <repository-url>
+cd <repository-name>
+```
+
+### 2. Create and activate the Conda environment
+You can create a Conda environment using the provided `environment.yml` file. Run the following command:
+
+```bash
+conda env create -f environment.yml
+```
+
+This will create a Conda environment named `sharepoint-env` with the specified dependencies.
+
+### 3. Activate the environment
+Once the environment is created, activate it with:
+
+```bash
+conda activate sharepoint-env
+```
+
+### 4. Install any remaining dependencies
+If there are any additional dependencies that need to be installed with pip, you can install them by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Verify the setup
+To verify that the environment has been set up correctly, run:
+
+```bash
+python --version
+```
+
+This should show Python 3.8 (or the version specified in `environment.yml`).
+
+
+**Running Outside of a Conda Environment**
+If you'd prefer to run the project outside of a Conda environment, follow these steps:
+
 ### 1. **Clone the Repository**
 ```bash
 git clone https://github.com/yourusername/sharepoint-crud-automation.git
@@ -71,11 +117,11 @@ cd sharepoint-crud-automation
 pip install -r requirements.txt
 ```
 
-### 3. **Set Up Configuration**
+**Set Up Configuration**
 - Modify `config/config.yaml` to include your SharePoint site URL and other configurations.
 - Ensure your SharePoint credentials are stored securely in `config/credentials.json` (avoid committing sensitive data).
 
-### 4. **Run Operations**
+**Run Operations**
 
 You can run each operation individually. For example:
 
@@ -83,7 +129,7 @@ You can run each operation individually. For example:
 python automation/upload_file.py --file_path "local_file.xlsx" --target_path "Documents/Shared"
 ```
 
-### 5. **Automated Workflow**
+**Automated Workflow**
 You can create a custom workflow that combines multiple operations. Example:
 
 ```python
@@ -98,7 +144,7 @@ def automated_workflow():
     return upload_response, file_list, download_response
 ```
 
-### 6. **Scheduling Tasks**
+**Scheduling Tasks**
 You can schedule operations with `automation/scheduler/job_scheduler.py` 
 
 ## **Future Work**
